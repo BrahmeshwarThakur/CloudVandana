@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #50C878;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 300px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            color: green;
+        }
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .name {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .designation {
+            color: #777;
+            margin-bottom: 10px;
+        }
+        .bio {
+            font-size: 0.9em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #555;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #0073b1;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://media.licdn.com/dms/image/v2/C5603AQFRszXcSiqHkQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1660387914549?e=1747267200&v=beta&t=mb5VVhhcQ8O_9kevpocc94KLBrC4OVucG6Aj3jkIBi4" alt="Profile Picture" class="profile-img">
+        <div class="name">Brahmeshwar Thakur</div>
+        <div class="designation">Web Developer</div>
+        <p class="bio">I am a passionate web developer dedicated to creating interactive web applications and user-friendly interfaces. With a strong foundation in HTML, CSS, and JavaScript, I specialize in designing dynamic, responsive websites that enhance user experience.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/brahmeshwar-thakur-12538120a/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/145/145807.png" alt="LinkedIn"></a>
+            <a href="mailto:brahmeshwarthakur1@gmail.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/732/732200.png" alt="Gmail"></a>
+            <a href="https://github.com/BrahmeshwarThakur" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/2111/2111432.png" alt="GitHub"></a>
+        </div>
+    </div>
+</body>
+</html>
